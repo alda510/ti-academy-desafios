@@ -1,5 +1,5 @@
-import { validacoes } from "./validacoes";
-window.onload = function () {
+// import { validacoes } from "./validacoes";
+// window.onload = function () {
     const usernameEl = document.querySelector('#username');
     const passwordEl = document.querySelector('#password');
 
@@ -133,4 +133,4 @@ window.onload = function () {
                 break;
         }
     }));
-}
+// }
