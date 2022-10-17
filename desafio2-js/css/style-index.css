@@ -85,12 +85,12 @@ body {
 .btn {
     width: 100%;
     padding: 3%;
-    background: none;
+    font: bold;
     border-bottom: 2px solid;
-    border-top-style: none;
+    border-top-style: 2px solid;
     border-right-style: none;
     border-left-style: none;
-    color: #fff;
+    color: black;
     text-transform: uppercase;
 }
 

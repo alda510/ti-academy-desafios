@@ -1,36 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'open sans', sans-serif;
 }
 
-.flex {
-    display: flex;
-    justify-content: left;
-    align-items: center;
+body {
+    background: whitesmoke;
 }
 
-.botoes{
-    border-right: 1px solid black;
-    width: 25%;
-    height: 1000px;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
+.wrapper .sidebar {
+    background: lightgrey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
 }
 
-div.botoes .botao {
-    background-color: white;
-    border: 0;
-    width: 100%;
-    text-align: left;
-    margin-top: 10px;
-    margin-left: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 24px;
-    cursor: pointer;
+.wrapper .sidebar ul li a {
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid black;
+    color: rgb(19, 15, 15);
+    font-size: 16px;
+    position: relative;
 }
 
-.material-symbols-outlined {
-    margin-right: 10px;
+.wrapper .sidebar ul li a .icon {
+    color: black;
+    width: 30px;
+    display: inline-block;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active {
+    padding-left: 70px;
+    transition: 0.4s;
+    color: whitesmoke;
+    background: gray;
+    border-right: 2px solid black;
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: white;
+}
+
+.wrapper .sidebar ul li a:hover::before,
+.wrapper .sidebar ul li a.active::before{
+    display: block;
 }
