@@ -4,7 +4,8 @@ window.onload = function () {
     const login = document.querySelector('#login')
     let validacao = false
     let users = [
-        { "user": "gustavo", "senha": "123" }
+        { "user": "gustavo", "senha": "123" },
+        {"user": "andre", "senha": "456"}
     ]
 
     login.addEventListener('click', function() {

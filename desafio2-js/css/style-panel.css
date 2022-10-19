@@ -56,3 +56,55 @@ body {
 .wrapper .sidebar ul li a.active::before{
     display: block;
 }
+
+.card-clientes {
+    background-color: white;
+    border: 2px solid black;
+    height: 300px;
+    width: 400px;
+    margin-left: 40%;
+    margin-top: 200px;
+}
+
+.card-clientes label,
+.card-clientes h3 {
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.card-clientes .nome1,
+.card-clientes .codigo1,
+.card-clientes .data {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 87%;
+    margin-left: 25px;
+    
+}
+
+.card-clientes .novo,
+.card-clientes .salvar {
+    height: 35px;
+    width: 50px;
+    margin-top: 5px;
+    margin-right: 20px;
+    font-size: 11px;
+    font: bold;
+    border-bottom: 2px solid;
+    border-top-style: 2px solid;
+    border-right-style: none;
+    border-left-style: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.container-btns {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+@import url(./cardClientes.css);
+@import url(./menuCardResponse.css);
