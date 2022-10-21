@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+    <link rel="stylesheet" href="estilos/painel.css">
+    <link rel="stylesheet" href="estilos/forms.css">
+
+    <title>Painel</title>
+</head>
+
+<body>
+    <main style="display: flex; align-items: center;">
+        <header class="sidemenu">
+            <nav>
+                <ul>
+                    <div class="sidemenu-item">
+                        <a id="click-clientes">
+                            <div class="item-icon"><span class="material-symbols-outlined">group</span></div>
+                            <li id="click-clientes" class="item">Clientes</li>
+                        </a>
+                    </div>
+                    <div class="sidemenu-item">
+                        <a id="click-produtos">
+                            <div class="item-icon"><span class="material-symbols-outlined">redeem</span></div>
+                            <li id="click-produtos" class="item">Produtos</li>
+                        </a>
+                    </div>
+                    <div class="sidemenu-item">
+                        <a id="click-pedidos">
+                            <div class="item-icon"><span class="material-symbols-outlined">shopping_cart</span></div>
+                            <li id="click-pedidos" class="item">Pedidos</li>
+                        </a>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <form action="#" id="clientes" class="form hidden">
+            <div class="title">
+                <h2>Clientes</h2>
+                <p class="x-button" id="click-clientes">X</p>
+            </div>
+
+            <div class="input-div">
+                <label for="">Código</label>
+                <input type="text" name="" id="" class="input">
+
+                <label for="">Nome</label>
+                <input type="text" name="" id="" class="input">
+
+                <label for="">Data Cadastro</label>
+                <input type="text" name="" id="" class="input">
+            </div>
+
+            <div class="bottom-button">
+                <div>
+                    <button id="prev-cliente" class="prev-next" type="button">&#60;</button>
+                    <button id="next-cliente" class="prev-next" type="button">&#62;</button>
+                </div>
+                <div class="new-save">
+                    <button id="new-cliente" type="button" class="new">Novo</button>
+                    <button id="save-cliente" type="button" class="save">Salvar</button>
+                </div>
+            </div>
+        </form>
+
+        <form action="" id="produtos" class="form hidden">
+            <div class="title">
+                <h2>Produtos</h2>
+                <i class="x-button" id="click-produtos">X</i>
+            </div>
+
+            <div class="input-div">
+                <label for="">Código</label>
+                <input type="text" name="" id="" class="input">
+
+                <label for="">Descrição</label>
+                <input type="text" name="" id="" class="input">
+
+                <label for="">Preço</label>
+                <input type="number" name="" id="" class="input">
+
+                <label for="">Quantidade</label>
+                <input type="number" name="" id="" class="input">
+            </div>
+
+            <div class="bottom-button">
+                <div>
+                    <button id="prev-produto" class="prev-next" type="button">&#60;</button>
+                    <button id="next-produto" class="prev-next" type="button">&#62;</button>
+                </div>
+                <div class="new-save">
+                    <button id="new-produto" type="button" class="new">Novo</button>
+                    <button id="save-produto" type="button" class="save">Salvar</button>
+                </div>
+            </div>
+
+        </form>
+
+        <form action="" id="pedidos" class="form hidden">
+            <div class="title">
+                <h2>Pedidos</h2>
+                <i class="x-button" id="click-pedidos">X</i>
+            </div>
+
+            <div class="input-div">
+                <label for="">Código do Cliente</label>
+                <input type="text" name="" id="" class="input">
+
+                <label for="">Cliente</label>
+                <input type="text" name="" id="" class="input" disabled>
+
+                <div class="divider"></div>
+
+                <label for="">Localizar produto</label>
+                <div class="produtos-input">
+                    <input type="number" class="input-number" placeholder="cod">
+                    <input type="text" class="" disabled>
+                    <input type="number" class="input-number" disabled>
+                    <input type="number" class="input-number" placeholder="qtd">
+                    <button id="insere-pedido" class="localizar" type="button">Lançar Item</button>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="itens">
+                    <label for="">Itens do Pedido</label>
+                    <table>
+                        <tr class="line">
+                            <th>Item</th>
+                            <th>Descrição</th>
+                            <th>Preço</th>
+                            <th>Qtd</th>
+                            <th>Sub Total</th>
+                        </tr>
+                        <tr class="line total">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Total(R$): </td>
+                            <td id="total" style="color: crimson">00.00</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            </div>
+        </form>
+    </main>
+
+    <script src="scripts/painel.js" type="module"></script>
+    <script src="./modules/clientes.js" type="module"></script>
+</body>
+
+</html>

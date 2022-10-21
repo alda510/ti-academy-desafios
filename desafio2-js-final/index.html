@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="estilos/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <main>
+        <h1>Log <span>in</span></h1>
+        <form id="login" onsubmit="ValidarLogin()" class="formulario">
+            <label for="user">Usuário</label>
+            <input type="text" id="user" required>
+
+            <label for="password">Senha</label>
+            <input type="password" id="password" required>
+
+            <input type="submit" value="ENTRAR" class="button">
+        </form>
+    </main>
+
+    <script src="scripts/login.js"></script>
+</body>
+
+</html>

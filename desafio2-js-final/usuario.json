@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "user": "gustavo",
+      "pws": "123"
+    },
+    {
+      "user": "Marcelo",
+      "pws": "senha"
+    }
+  ]
+}

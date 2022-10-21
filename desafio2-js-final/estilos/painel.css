@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans', sans-serif;
+    font-size: 1rem;
+}
+
+:root {
+    --font_padrao: 'open sans', sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.sidemenu {
+    width: 26%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    border-right: 1px solid lightgray;
+    background-color: whitesmoke;
+    transition: all 0.5s ease;
+}
+
+.sidemenu-item>a {
+    width: 100%;
+    display: block;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.sidemenu-item>a:hover {
+    padding-left: 50px;
+    transition: 0.4s;
+    color: whitesmoke;
+    background: gray;
+    cursor: pointer;
+}
+
+.item-icon {
+    margin-left: 20%;
+    display: inline-block;
+}
+
+.item {
+    list-style: none;
+    padding: 10px;
+}

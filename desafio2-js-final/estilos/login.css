@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --font_padrao: 'Poppins';
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    padding: 10px;
+}
+
+span {
+    color: crimson;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    border: 1px solid none;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    padding: 5px;
+}
+
+input {
+    width: auto;
+    height: 2em;
+    padding: 5px;
+    border: solid 2px #f0f0f0;
+    border-radius: 2px;
+}
+
+.button {
+    height: 4em;
+    margin-top: 10px;
+    color: black;
+    font-size: 1rem;
+    background-color: lightgray;
+    border-right-style: none;
+    border-left-style: none;
+}
+
+.button:hover {
+    color: black;
+    background-color: whitesmoke;
+}
